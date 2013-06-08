@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+     <HEAD>
+      <TITLE>$!page_title 测试layout页面</TITLE>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta http-equiv="Content-Language" content="zh-CN"/>
+      <META NAME="Generator" CONTENT="EditPlus">
+      <META NAME="Author" CONTENT="">
+      <META NAME="Keywords" CONTENT="">
+      <META NAME="Description" CONTENT="">
+    $script
+     </HEAD>
+     <BODY>
+        ------------------------------------
+        <br>
+        $screen_content
+ 
+     </BODY>
+</HTML>
+pageFooter.vm
+?
+Copyright © 2012
+pageFooter1.vm
+?
+#set ($innerVar = "This is an inner variable")
+Copyright © $companyName 2012
+index.vm
+?
+#set($layout="layout/layout.vm")
+#set($page_title="测试首页")
+#set($products = ["one", "two", "three"])  
+#set($companyName = "Tony Law")
+#parse("macro/writeTable.vm")
+#define($script) 
+## custom script here
+<script src="script/jquery.js" type="text/javascript"></script>  
+#end
+    Here we use a custom tool: $toytool.message
+    <div>
+         <ul>   
+            #foreach($CourseBean in $newstool.ListTopNews(10))  
+            <li>       
+                ${CourseBean.name}
+            </li>   
+            #end   
+         </ul>
+    </div>
+    #set($region = "news") 
+    #set($key = "home") 
+    #cache("CACHE_$region",$key)
+    #end
+    <div> 
+    #cache("News","home") 
+    ## 读取数据库中最新新闻并显示
+    <ul>   
+        #foreach($CourseBean in $newstool.ListTopNews(10))  
+        <li>       
+            ${CourseBean.name}
+        </li>   
+        #end   
+    </ul>
+    #end
+    </div>
+ 
+<table>
+#writeTable($products)  
+</table>
+<br>
+#parse("layout/pageFooter1.vm")
+<br>
+$innerVar
+<br>
+#include("layout/pageFooter.vm")
