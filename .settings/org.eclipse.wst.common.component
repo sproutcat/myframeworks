@@ -3,6 +3,8 @@
     <wb-module deploy-name="myframeworks">
         <wb-resource deploy-path="/" source-path="/WebRoot"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
         <property name="context-root" value="/myframeworks"/>
         <property name="java-output-path" value="/myframeworks/WebRoot/WEB-INF/classes"/>
     </wb-module>
