@@ -176,8 +176,8 @@ var util = (function() {
         reloadJs : function(reloadJs){
     		jQuery("#" + reloadJs["xtype"]).remove();
 			this.loadedLibrary[reloadJs["xtype"]] = false;
-        	if(reloadJs['patn'])
-        		this.loadJs(reloadJs['patn']);
+        	if(reloadJs['path'])
+        		this.loadJs(reloadJs['path']);
         },
         isIE: function() {
         	var browser=navigator.appName;
