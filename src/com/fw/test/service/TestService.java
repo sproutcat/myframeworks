@@ -1,7 +1,7 @@
-package com.fw.sys.service;
+package com.fw.test.service;
 
 import com.fw.common.service.IBaseService;
-import com.fw.sys.model.Test;
+import com.fw.test.model.Test;
 
 public interface TestService  extends IBaseService<Test, Integer>{
 

@@ -1,4 +1,4 @@
-package com.fw.sys.controller;
+package com.fw.test.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.fw.sys.model.Test;
-import com.fw.sys.service.TestService;
+import com.fw.test.model.Test;
+import com.fw.test.service.TestService;
 
 
 @Controller

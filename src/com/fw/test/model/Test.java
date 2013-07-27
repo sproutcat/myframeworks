@@ -1,4 +1,4 @@
-package com.fw.sys.model;
+package com.fw.test.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
