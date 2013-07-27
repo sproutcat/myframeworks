@@ -1,7 +1,9 @@
 
 
 
-
+/**
+ * 用户管理
+ */
 Ext.define('App.view.sys.User', {
 	extend : 'App.baseui.BaseSearchGrid',
 	alias : 'widget.sysUser',
@@ -61,6 +63,9 @@ Ext.define('App.view.sys.User', {
 			dataIndex : 'status',
 			flex : 1
 		}]
-	}
+	},
+	getGridStore: function() {
+    	return Ext.getStore('sys.User');
+    }
 });
 
