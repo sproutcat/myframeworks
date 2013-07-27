@@ -3,13 +3,13 @@
 
 
 Ext.define('App.controller.sys.UserModule', {
-	extend : 'Ext.app.Controller',
+	extend : 'App.baseui.BaseController',
 	views : ['sys.User'],
-	//stores : ['User'],
+	stores : ['sys.User'],
 	
-	init: function(application) {
+	getMyContral: function(application) {
 		var gridPanel, searchPanel;
-		this.control({
+		return {
 			"sysUser": {
 				'beforerender' : function(view) {
 					view.loadView();
@@ -54,7 +54,7 @@ Ext.define('App.controller.sys.UserModule', {
 					alert("删除");
 				}
 			}
-		});
+		};
 	},
 	
 	/**
