@@ -21,7 +21,7 @@ Ext.define('App.baseui.BaseGrid', {
 			selModel : Ext.create('Ext.selection.CheckboxModel', {
 				listeners : {
 					selectionchange : function(sm, selections) {
-						//grid.down('#removeButton').setDisabled(selections.length == 0);
+						//grid.down('#delBtn').setDisabled(selections.length == 0);
 					}
 				}
 			}),
