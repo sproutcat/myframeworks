@@ -1,4 +1,6 @@
-Ext.define('App.model.User', {
+Ext.define('App.model.sys.User', {
 	extend : 'Ext.data.Model',
-	fields : ['theme', 'css']
+	fields : ["recid", "realName", "subCompany", "department", "mail",
+			"mobile", "userType", "status", "createtime", "modifytime",
+			"name", "pwd"]
 });
