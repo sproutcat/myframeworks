@@ -10,6 +10,7 @@ var baseUIPaths = {
 	"baseSearchTools": "js/app/baseui/BaseSearchTools.js",
 	"baseSearchGrid": "js/app/baseui/BaseSearchGrid.js",
 	"baseWindow": "js/app/baseui/BaseWindow.js",
+	"baseController": "js/app/baseui/BaseController.js",
 	
 	//-----------------------app js--------------------------------
 	"mainModule": "js/app/controller/MainModule.js",
