@@ -19,9 +19,9 @@ import org.dom4j.io.SAXReader;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.fw.common.util.SpringContextUtil;
-import com.fw.demo.dao.MenusDao;
-import com.fw.demo.model.Menus;
-import com.fw.demo.service.MenusService;
+import com.fw.sys.dao.MenusDao;
+import com.fw.sys.model.Menus;
+import com.fw.sys.service.MenusService;
 
 /**
  * 
