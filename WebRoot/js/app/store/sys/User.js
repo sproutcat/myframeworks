@@ -1,11 +1,11 @@
-Ext.define('App.store.User', {
+Ext.define('App.store.sys.User', {
 	extend : 'Ext.data.Store',
 
 	autoLoad : true,
-	model : 'App.model.User',
+	model : 'App.model.sys.User',
 	proxy : {
         type : 'ajax',
-        url : 'js/data/theme.json',
+        url : 'user/search',
         reader : {
             type : 'json',
             root : 'data',
